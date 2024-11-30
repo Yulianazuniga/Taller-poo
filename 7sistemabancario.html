@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos</title>
+</head>
+<body>
+    <h1>Gestión de Cursos</h1>
+
+    <h2>Agregar Estudiante</h2>
+    <form id="agregarEstudianteForm">
+        <label for="nombreEstudiante">Nombre del Estudiante:</label>
+        <input type="text" id="nombreEstudiante" required><br><br>
+        <label for="edadEstudiante">Edad:</label>
+        <input type="number" id="edadEstudiante" required><br><br>
+        <button type="button" id="agregarEstudiante">Agregar Estudiante</button>
+    </form>
+
+    <h2>Agregar Calificación al Estudiante</h2>
+    <form id="agregarCalificacionForm">
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" required><br><br>
+        <button type="button" id="agregarCalificacion">Agregar Calificación</button>
+    </form>
+
+    <h2>Estudiantes Agregados</h2>
+    <ul id="estudiantesLista"></ul>
+
+    <h2>Calcular Promedio del Curso</h2>
+    <button type="button" id="calcularPromedio">Calcular Promedio</button>
+    <div id="promedioCurso"></div>
+
+    <script src="/7sistemaCursos.js"></script>
+</body>
+</html>

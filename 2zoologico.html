@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológico</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Bienvenido al Zoológico</h1>
+
+    <!-- Formulario para crear y agregar animales -->
+    <div>
+        <h2>Crear un animal</h2>
+        <label for="animal">Seleccione un animal:</label>
+        <select id="animal">
+            <option value="León">León</option>
+            <option value="Elefante">Elefante</option>
+            <option value="Tigre">Tigre</option>
+        </select>
+
+        <label for="nombre">Nombre del animal:</label>
+        <input type="text" id="nombre" placeholder="Ingresa el nombre del animal" required>
+
+        <button id="agregarAnimal">Agregar Animal</button>
+    </div>
+
+    <hr>
+
+    <!-- Botón para hacer sonar los animales -->
+    <div>
+        <button id="hacerSonidos">Hacer Sonidos</button>
+    </div>
+
+    <p id="mensaje"></p>
+
+
+</body>
+<script src="/2zoologico.js"></script>
+</html>

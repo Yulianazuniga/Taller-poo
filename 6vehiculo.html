@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vehículos</title>
+</head>
+<body>
+    <h1>Gestión de Vehículos</h1>
+
+    <h2>Agregar Vehículo</h2>
+    <form id="agregarVehiculoForm">
+        <label for="marca">Marca:</label>
+        <input type="text" class="marca" id="marca" placeholder="Marca del vehículo" required><br><br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" class="modelo" id="modelo" placeholder="Modelo del vehículo" required><br><br>
+        <label for="año">Año:</label>
+        <input type="number" class="año" id="año" placeholder="Año del vehículo" required><br><br>
+        <label for="tipo-vehiculo">Tipo de Vehículo:</label>
+        <select class="tipo-vehiculo" id="tipo-vehiculo">
+            <option value="Auto">Auto</option>
+            <option value="Moto">Moto</option>
+        </select><br><br>
+        <button type="button" class="agregar-vehiculo">Agregar Vehículo</button>
+    </form>
+
+    <h2>Vehículos Agregados</h2>
+    <div class="vehiculos-lista"></div>
+
+    <h2>Listar Vehículos por Tipo</h2>
+    <button class="mostrar-por-tipo">Listar Vehículos</button>
+    <p>Selecciona el tipo de vehículo:</p>
+    <select class="tipo-vehiculo">
+        <option value="Auto">Auto</option>
+        <option value="Moto">Moto</option>
+    </select>
+
+    <h3>Vehículos Listados:</h3>
+    <div class="vehiculos-lista"></div>
+
+    <script src="/6vehiculos.js"></script>
+</body>
+</html>

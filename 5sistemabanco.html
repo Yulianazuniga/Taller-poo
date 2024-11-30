@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - Operaciones</title>
+</head>
+<body>
+
+    <h1>Operaciones del Banco</h1>
+
+ 
+    <div>
+        <h3>Realizar operación</h3>
+        <label for="operacion">Seleccione la operación:</label>
+        <select class="operacion">
+            <option value="depositar">Depositar</option>
+            <option value="retirar">Retirar</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" class="cantidad" placeholder="Ingrese la cantidad" />
+
+        <button class="realizar-operacion">Realizar operación</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>Aplicar intereses a cuentas de ahorro</h3>
+        <button class="aplicar-intereses">Aplicar intereses</button>
+    </div>
+
+    <hr>
+
+ 
+    <div>
+        <h3>Información de cuentas</h3>
+        <button class="mostrar-cuentas">Mostrar cuentas</button>
+        <div class="informacion-cuentas"></div>
+    </div>
+
+    <script src="/5Sistemabancario.js"></script>
+
+</body>
+</html>

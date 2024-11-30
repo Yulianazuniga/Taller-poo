@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Gestión de Productos - Electrodomésticos</h1>
+
+    <!-- Sección para ver el electrodoméstico principal -->
+    <div id="electrodomesticoPrincipal">
+        <h2>Electrodoméstico Principal</h2>
+        <p><strong>Nombre:</strong> <span id="nombreElectrodomestico"></span></p>
+        <p><strong>Precio:</strong> <span id="precioElectrodomestico"></span></p>
+        <p><strong>Stock:</strong> <span id="stockElectrodomestico"></span></p>
+        <p><strong>Marca:</strong> <span id="marcaElectrodomestico"></span></p>
+    </div>
+
+    <hr>
+
+    <!-- Formulario para agregar productos -->
+    <div id="formularioAgregarProducto">
+        <h2>Agregar Producto</h2>
+        <label for="nombreProducto">Nombre:</label>
+        <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+
+        <label for="precioProducto">Precio:</label>
+        <input type="number" id="precioProducto" placeholder="Precio del producto">
+
+        <label for="stockProducto">Cantidad en stock:</label>
+        <input type="number" id="stockProducto" placeholder="Cantidad en stock">
+
+        <label for="marcaProducto">Marca:</label>
+        <input type="text" id="marcaProducto" placeholder="Marca del producto">
+
+        <button id="agregarProducto">Agregar Producto</button>
+    </div>
+
+    <hr>
+
+    <!-- Botón para listar productos con poco stock -->
+    <div id="listarStock">
+        <h2>Productos con Poco Stock</h2>
+        <button id="verProductosConPocoStock">Listar productos con stock menor a 10</button>
+        <div id="productosPocoStock"></div>
+    </div>
+
+    <p id="mensaje"></p>
+
+</body>
+<script src="/3inventario.js"></script>
+</html>
